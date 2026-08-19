@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DAYANAND | Creative Portfolio</title>
+  <meta name="description" content="Creative portfolio of DAYANAND – ISE student & Web Developer." />
+
+  <!-- AOS Animation -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Remix Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="design.css" />
+</head>
+<body>
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Animated Background -->
+  <div class="bg-animation">
+    <div class="star" style="top:10%;left:15%"></div>
+    <div class="star" style="top:30%;left:70%"></div>
+    <div class="star" style="top:60%;left:40%"></div>
+    <div class="star" style="top:80%;left:85%"></div>
+    <div class="star" style="top:20%;left:90%"></div>
+    <div class="star" style="top:70%;left:10%"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar glass">
+    <div class="logo">
+      <span class="logo-icon"><i class="ri-code-s-slash-line"></i></span>
+      <span class="logo-text">DAYANAND</span>
+    </div>
+    <div class="nav-actions">
+      <a href="#contact" class="nav-btn">
+        <i class="ri-mail-send-line"></i> Contact
+      </a>
+      <button id="themeBtn" class="nav-btn theme-btn">
+        <i class="ri-moon-line"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="container hero-container">
+      <div class="hero-text" data-aos="fade-right">
+        <div class="badge">
+          <i class="ri-sparkling-fill"></i>
+          Student · Web Developer · Creator
+        </div>
+        <h1 class="hero-title">
+          Hi, I’m <span class="gradient-text">DAYANAND</span>
+        </h1>
+        <p class="hero-subtitle">
+          I build modern, clean, and interactive websites.
+          ISE student who loves coding, design, and learning new tech.
+        </p>
+
+        <p class="typing-text" id="typingText"></p>
+
+        <div class="hero-buttons">
+          <button id="changeTextBtn" class="btn btn-primary">
+            <i class="ri-magic-line"></i> Change Message
+          </button>
+          <button id="scrollBtn" class="btn btn-outline">
+            <i class="ri-arrow-down-line"></i> Explore
+          </button>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-aos="fade-left">
+        <div class="profile-card glass">
+          <div class="profile-ring"></div>
+          <div class="profile-ring delay"></div>
+          <img
+            src="https://tse4.mm.bing.net/th/id/OIP.P0rt2Hper57xn9MdXZ2j2QHaEK?r=0&pid=Api&P=0&h=180"
+            alt="DAYANAND"
+            class="profile-img"
+          />
+          <div class="profile-badge">
+            <i class="ri-verified-badge-fill"></i> Open to Work
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <!-- About -->
+    <section id="about" class="card glass" data-aos="fade-up">
+      <div class="card-header">
+        <i class="ri-user-smile-line card-icon"></i>
+        <h2>About Me</h2>
+      </div>
+      <p class="card-text">
+        I am a second‑semester ISE student at Sahyadri College of Engineering.
+        I enjoy building web projects with HTML, CSS, and JavaScript, and I’m focused on
+        improving my skills for future placements and freelance work.
+      </p>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="card glass" data-aos="fade-up">
+      <div class="card-header">
+        <i class="ri-book-open-line card-icon"></i>
+        <h2>Education</h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-item">
+          <div class="edu-title">College</div>
+          <div class="edu-desc">Sahyadri College of Engineering</div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-title">Branch</div>
+          <div class="edu-desc">Information Science and Engineering</div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-title">Semester</div>
+          <div class="edu-desc">3rd Semester</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="card glass" data-aos="fade-up">
+      <div class="card-header">
+        <i class="ri-code-s-slash-line card-icon"></i>
+        <h2>Skills</h2>
+      </div>
+      <div class="skills-wrap">
+        <span class="skill-chip">HTML</span>
+        <span class="skill-chip">CSS</span>
+        <span class="skill-chip">JavaScript</span>
+        <span class="skill-chip">Python</span>
+        <span class="skill-chip">C</span>
+        <span class="skill-chip">GitHub</span>
+        <span class="skill-chip">VS Code</span>
+        <span class="skill-chip">Responsive Design</span>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="card glass" data-aos="fade-up">
+      <div class="card-header">
+        <i class="ri-projector-line card-icon"></i>
+        <h2>Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card glass" data-aos="zoom-in">
+          <div class="project-thumb">
+            <div class="project-icon">
+              <i class="ri-layout-grid-fill"></i>
+            </div>
+            <div class="project-links">
+              <a
+                href="https://tech1dk.github.io/DAYANAND-PORTFOLIO/"
+                target="_blank"
+                class="mini-btn primary"
+              >
+                <i class="ri-external-link-line"></i> Live
+              </a>
+              <a
+                href="https://github.com/tech1DK/DAYANAND-PORTFOLIO"
+                target="_blank"
+                class="mini-btn outline"
+              >
+                <i class="ri-github-line"></i> Code
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Personal Portfolio</h3>
+            <p class="project-desc">
+              A responsive portfolio website with dark mode, animations, and modern UI.
+            </p>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card glass" data-aos="zoom-in" data-aos-delay="100">
+          <div class="project-thumb">
+            <div class="project-icon">
+              <i class="ri-code-box-fill"></i>
+            </div>
+            <div class="project-links">
+              <a href="#" class="mini-btn primary">
+                <i class="ri-external-link-line"></i> Live
+              </a>
+              <a href="https://github.com/tech1DK" target="_blank" class="mini-btn outline">
+                <i class="ri-github-line"></i> Code
+              </a>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Web Practice Pages</h3>
+            <p class="project-desc">
+              Small practice projects to improve layout, styling, and interactivity.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="card glass" data-aos="fade-up">
+      <div class="card-header">
+        <i class="ri-chat-1-line card-icon"></i>
+        <h2>Contact</h2>
+      </div>
+
+      <div class="contact-info">
+        <div class="contact-item">
+          <i class="ri-mail-line"></i>
+          <a href="mailto:dayanandmane07@gmail.com">dayanandmane07@gmail.com</a>
+        </div>
+        <div class="contact-item">
+          <i class="ri-github-line"></i>
+          <a href="https://github.com/tech1DK" target="_blank">github.com/tech1DK</a>
+        </div>
+        <div class="contact-item">
+          <i class="ri-linkedin-line"></i>
+          <a href="#" target="_blank">LinkedIn (add your link)</a>
+        </div>
+      </div>
+
+      <form id="contactForm" class="contact-form">
+        <input
+          type="text"
+          id="nameInput"
+          placeholder="Your name"
+          class="input-field"
+          required
+        />
+        <button type="submit" class="btn btn-primary">
+          <i class="ri-send-plane-fill"></i> Say Hello
+        </button>
+      </form>
+
+      <p id="message" class="form-message"></p>
+    </section>
+  </main>
+
+  <footer class="footer glass">
+    <p>
+      Made with <i class="ri-heart-fill heart-icon"></i> by DAYANAND ·
+      <span class="year"></span>
+    </p>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <!-- Main JS -->
+  <script src="main.js"></script>
+</body>
+</html>
